@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/gadgetListFragment">
+
+    <fragment
+        android:id="@+id/gadgetListFragment"
+        android:name="com.ziwame.e_commerceapp.view.ui.GadgetListFragment"
+        android:label="LoginScreenFragment"
+        tools:layout="@layout/fragment_gadget_list"></fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.ziwame.e_commerceapp.view.ui.CartListFragment"
+        android:label="LoginScreenFragment"
+        tools:layout="@layout/fragment_cart_list">
+        <action
+            android:id="@+id/action_cart_to_order"
+            app:destination="@id/orderPlacedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderPlacedFragment"
+        android:name="com.ziwame.e_commerceapp.view.ui.OrderPlaceFragment"
+        android:label="LoginScreenFragment"
+        tools:layout="@layout/fragment_order_place">
+        <action
+            android:id="@+id/action_order_to_productlist"
+            app:destination="@id/gadgetListFragment"
+            app:popUpTo="@id/gadgetListFragment" />
+    </fragment>
+</navigation>

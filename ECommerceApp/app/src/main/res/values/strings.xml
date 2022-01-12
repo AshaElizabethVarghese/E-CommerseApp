@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E-CommerceApp</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="error">Cart is Empty</string>
+    <string name="congrats">Congratulations</string>
+    <string name="order">Your Order has been Placed</string>
+    <string name="shopping">Continue Shopping</string>
+</resources>
