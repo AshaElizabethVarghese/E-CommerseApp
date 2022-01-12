@@ -47,5 +47,20 @@
             android:layout_below="@+id/appbar"
             app:defaultNavHost="true"
             app:navGraph="@navigation/navigation_graph" />
+        <FrameLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/progressWrapper"
+            android:alpha="0.6">
+
+            <ProgressBar
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/circleLoader"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                style="?android:attr/progressBarStyle"/>
+
+        </FrameLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

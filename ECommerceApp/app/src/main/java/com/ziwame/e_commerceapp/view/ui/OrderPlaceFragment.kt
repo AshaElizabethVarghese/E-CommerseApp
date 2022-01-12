@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import com.ziwame.e_commerceapp.MainActivity
 import com.ziwame.e_commerceapp.R
 import com.ziwame.e_commerceapp.databinding.FragmentCartListBinding
 import com.ziwame.e_commerceapp.databinding.FragmentOrderPlaceBinding
